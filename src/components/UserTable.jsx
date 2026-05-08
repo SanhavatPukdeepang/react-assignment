@@ -1,27 +1,4 @@
-import { useState, useEffect } from 'react';
-import axios from 'axios';
-
-const UserTable = () => {
-  const [members, setMembers] = useState([]);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await axios.get('https://67eca027aa794fb3222e43e2.mockapi.io/members');
-        setMembers(response.data);
-        setLoading(false);
-      } catch (error) {
-        console.error("Fetch error:", error);
-        setLoading(false);
-      }
-    };
-
-
-
-    fetchData();
-  }, []);
-
+const UserTable = ({ members, loading }) => {
   if (loading) return <div className="text-center py-10">Loading...</div>;
 
   return (
