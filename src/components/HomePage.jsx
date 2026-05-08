@@ -1,3 +1,6 @@
+import UserTable from "./UserTable";
+
+
 const HomePage = () => {
     return (
         <>
@@ -12,7 +15,9 @@ const HomePage = () => {
                     <button className="bg-white px-4 py-2 rounded font-bold  hover:text-blue-400  transition-colors">User Home Section</button>
                     <button className="bg-white px-4 py-2 rounded font-bold  hover:text-blue-400  transition-colors">Admin Home Section</button>
                 </div> 
-            </div>ร
+                <UserTable/>
+            </div>
+            
         </>
     )
 }
