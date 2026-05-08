@@ -4,14 +4,12 @@ export default function Navbar() {
     <nav className="bg-gray-300 border-b border-gray-800 px-4 py-3 shadow-md">
       <div className="container mx-auto flex justify-end items-center">
 
-        
-
         {/* ส่วนของ Links */}
         <div className="flex gap-6">
-          <a href="/" className="text-black hover:text-blue-400 font-medium transition-colors">
+          <a href="/" className="text-black font-bold hover:text-blue-400 f transition-colors">
             Home
           </a>
-          <a href="/owner" className="text-black hover:text-blue-400 font-medium transition-colors">
+          <a href="/owner" className="text-black font-bold hover:text-blue-400 transition-colors">
             Owner
           </a>
         </div>

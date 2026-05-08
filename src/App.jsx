@@ -1,12 +1,16 @@
 import { useState } from 'react'
-import Header from './components/Header'
+import Navbar from './components/Navbar'
+import HomePage from './components/HomePage'
+import UserTable from './components/UserTable'
 
 function App() {
-  
 
   return (
-    <Header/>
+    <>
+      <Navbar/>
+      <HomePage/>
+      <UserTable/>
+    </>
   )
 }
-
 export default App
